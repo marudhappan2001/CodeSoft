@@ -1,68 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebPro Solutions - Web Development Services</title>
-    <link rel="stylesheet" href="style    
+
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     
-    .css">
 </head>
 <body>
+    <script src='personal.js'></script>
+     <!---NavBar-->
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>WebPro Solutions</h1>
-        <p>Your trusted partner for modern and responsive websites.</p>
-        <a href="#services" class="cta-btn">View Our Services</a>
-    </header>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-box">
-                <h3>Custom Web Development</h3>
-                <p>We build tailor-made websites to meet your business needs.</p>
-            </div>
-            <div class="service-box">
-                <h3>eCommerce Solutions</h3>
-                <p>Get a powerful online store with a seamless shopping experience.</p>
-            </div>
-            <div class="service-box">
-                <h3>SEO & Performance Optimization</h3>
-                <p>Improve your website’s speed and search rankings for better visibility.</p>
-            </div>
+     <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <!--Hero Section-->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Hi, I’m Marudhappan Software Engineer</h1>
+            <p>"I'm a passionate software developer with expertise in creating efficient, user-friendly applications. My goal is to leverage technology to solve real-world problems and enhance user experiences."</p>
+            <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section class="why-choose">
-        <h2>Why Choose WebPro Solutions?</h2>
-        <p>We deliver high-quality, user-friendly, and scalable web solutions.</p>
-    </section>
+   
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <p>“WebPro Solutions transformed our website into a modern and fast platform. Highly recommended!” – Alex T.</p>
-    </section>
+    
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Get in Touch</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+    <!---About Me-->
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <img src="202207201556420000.jpg" alt="Marudhappan" class="profile-pic">
+            <div class="bio-content">
+                <h2>About Me</h2>
+                <p>"Hi, Marudhappan! I'm a dedicated software engineer with a background in Java Full Stack. I specialize in developing scalable, high-performance applications and have a strong interest in system architecture, developing, and contributing to open-source projects."</p>
+                <h3>Skills & Interests</h3>
+                <ul>
+                    <li>Backend Development</li>
+                    <li>Web Development</li>
+                    <li>Open Source Contributions</li>
+                    <li>Coding Education and Mentorship</li>
+                </ul>
+                <a href="path-to-your-resume.pdf" download class="download-button">Download My Resume</a>
+            </div>
+        </div>
+        <div class="skills-graph">
+            <h3>My Skills</h3>
+            <div class="skill-bar">
+                <span class="skill-label">Core Java</span>
+                <div class="bar">
+                    <div class="progress" data-skill="90"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-label">J2EE</span>
+                <div class="bar">
+                    <div class="progress" data-skill="85"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-label">Html</span>
+                <div class="bar">
+                    <div class="progress" data-skill="80"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-label">Css</span>
+                <div class="bar">
+                    <div class="progress" data-skill="75"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <span class="skill-label">JavaScript</span>
+                <div class="bar">
+                    <div class="progress" data-skill="75"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-label">Sql</span>
+                <div class="bar">
+                    <div class="progress" data-skill="75"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span class="skill-label">Mysql</span>
+                <div class="bar">
+                    <div class="progress" data-skill="75"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Project-->
+
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="project1-thumbnail.jpg" alt="Project 1" class="project-image">
+                <h3 class="project-title">Personal Portfolio</h3>
+                <p class="project-description">Designed a dynamic and visually applealing portfolio using Html,Css and javascript the skills and personal details</p>
+                <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+                <a href="https://link-to-live-project.com" target="_blank" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="project2-thumbnail.jpg" alt="Project 2" class="project-image">
+                <h3 class="project-title">SignUp Page</h3>
+                <p class="project-description">Developed a resposive signUp page using Html,css for Backend Java, Hibernate ,Servlets and Sql.</p>
+                <p class="project-tech">Technologies: Java,Html,Css,Hibernate,Servlets and Sql</p>
+                <a href="https://link-to-live-project.com" target="_blank" class="project-link">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="project3-thumbnail.jpg" alt="Project 3" class="project-image">
+                <h3 class="project-title">Bus Ticket Booking</h3>
+                <p class="project-description">Stored the booking details in a database using Java,Jdbc and sql.</p>
+                <p class="project-tech">Technologies: Java,Jdbc,Sql</p>
+                <a href="https://link-to-live-project.com" target="_blank" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="project3-thumbnail.jpg" alt="Project 3" class="project-image">
+                <h3 class="project-title">Iot Based Battery Management System</h3>
+                <p class="project-description">Developed a system to monitor and optimise charging stations for electric vehicels enhancing efficieny.</p>
+                <p class="project-tech">Technologies: Embedded System</p>
+                <a href="https://link-to-live-project.com" target="_blank" class="project-link">View Project</a>
+            </div>
+            
+        </div>
+    </section>
+    
+
+   
+
+
+
+    <!---Contact-->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form" class="contact-form" action="mailto:maruthappan2001@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
             <button type="submit">Send Message</button>
         </form>
+    
+        <div class="social-media">
+            <h3>Connect with Me</h3>
+            <a href="https://github.com/yourprofile" target="_blank" class="social-icon">
+                <img src="github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+           
+        </div>
+    
+        <div class="email-address">
+            <h3>Email Me</h3>
+            <a href="mailto:maruthappan2001@gmail.com" class="email-link">maruthappan2001@gamil.com</a>
+        </div>
     </section>
+    
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 WebPro Solutions | All Rights Reserved</p>
+
+    <!---Footer-->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="social-media">
+                <h3>Follow Me</h3>
+                <a href="https://github.com/marudhappan2001" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 marudhappan. All Rights Reserved.</p>
+        </div>
     </footer>
+    
 
+    
 </body>
 </html>
+
+
+
+
+
+
+
+
+
